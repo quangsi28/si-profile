@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Divider, Heading, Text, VStack } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
 import { UiTimeline } from '../ui';
 
 interface Props {}
@@ -27,7 +28,19 @@ const JobTimeline: React.FC<Props> = ({}) => {
   ];
 
   return (
-    <Box id='jobTimelineSection' px={4} py={20} bg='gray.700' display='flex' flexDirection='column' alignItems='center'>
+    <Box
+      id='jobTimelineSection'
+      px={4}
+      py={20}
+      bg='gray.700'
+      display='flex'
+      flexDirection='column'
+      alignItems='center'
+      as={motion.div}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
       <VStack>
         <Heading color='white'>Job Timeline</Heading>
         <Text color='white'>More detail about job</Text>
