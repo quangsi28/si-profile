@@ -11,6 +11,7 @@ import ProjectsSection from '../components/projects-section';
 import TechnologiesSection from '../components/technologies-section';
 import FloatMenu from '../components/ui/float-menu';
 import WelcomeSection from '../components/welcome-section';
+import JobTimeline from '../components/job-timeline';
 import styles from '../styles/Home.module.css';
 
 import type { NextPage } from 'next';
@@ -39,6 +40,7 @@ const Home: NextPage = () => {
         <ProjectsSection />
         <ExpSection />
         <TechnologiesSection />
+        <JobTimeline />
       </main>
 
       <Footer />
